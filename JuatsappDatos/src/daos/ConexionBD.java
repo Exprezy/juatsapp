@@ -24,7 +24,6 @@ public class ConexionBD implements IConexionBD {
     private static final String HOST = "localhost";
     private static final int PUERTO = 27017;
     private static final String BASE_DATOS = "juatsappbd";
-    String datos;
 
     private static MongoDatabase conexion = null;
 
