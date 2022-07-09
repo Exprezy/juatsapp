@@ -5,8 +5,6 @@
 package entidades;
 
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.List;
 import java.util.Objects;
 import org.bson.types.ObjectId;
 
