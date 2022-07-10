@@ -14,6 +14,7 @@ import interfaces.IDatos;
 public class ControlUsuarios {
 
     private IDatos datos;
+    String control;
     
     protected ControlUsuarios(IDatos datos){
         this.datos = datos;
