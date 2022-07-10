@@ -217,7 +217,6 @@ public class Registro extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labelRegistrarte)
                             .addComponent(labelFecha)
                             .addComponent(labelSexo)
                             .addComponent(labelTelefono)
@@ -225,7 +224,7 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(labelCalle)
                             .addComponent(labelColonia)
                             .addComponent(labelNumero))
-                        .addGap(18, 18, 18)
+                        .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(botonMasculino)
@@ -244,17 +243,22 @@ public class Registro extends javax.swing.JFrame {
                         .addComponent(botonRegistrarte))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(botonVolver)))
+                        .addComponent(botonVolver)
+                        .addGap(134, 134, 134)
+                        .addComponent(labelRegistrarte)))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(botonVolver)
-                .addGap(3, 3, 3)
-                .addComponent(labelRegistrarte)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(botonVolver))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(labelRegistrarte)))
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelTelefono)
                     .addComponent(textTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -311,9 +315,10 @@ public class Registro extends javax.swing.JFrame {
         // TODO add your handling code here:
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new Menu().setVisible(true);
             }
         });
+        this.dispose();
     }//GEN-LAST:event_botonVolverActionPerformed
 
     private void textNumeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textNumeroKeyTyped

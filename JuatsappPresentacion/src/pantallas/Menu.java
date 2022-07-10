@@ -31,8 +31,8 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         labelMenu = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        botonLogin = new javax.swing.JButton();
+        botonRegistro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Menú");
@@ -40,17 +40,17 @@ public class Menu extends javax.swing.JFrame {
         labelMenu.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         labelMenu.setText("Menú");
 
-        jButton1.setText("Iniciar Sesión");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonLogin.setText("Iniciar Sesión");
+        botonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonLoginActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Crear cuenta nueva");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        botonRegistro.setText("Crear cuenta nueva");
+        botonRegistro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                botonRegistroActionPerformed(evt);
             }
         });
 
@@ -65,10 +65,10 @@ public class Menu extends javax.swing.JFrame {
                         .addComponent(labelMenu))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(149, 149, 149)
-                        .addComponent(jButton1))
+                        .addComponent(botonLogin))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(135, 135, 135)
-                        .addComponent(jButton2)))
+                        .addComponent(botonRegistro)))
                 .addContainerGap(135, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -77,32 +77,35 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(38, 38, 38)
                 .addComponent(labelMenu)
                 .addGap(46, 46, 46)
-                .addComponent(jButton1)
+                .addComponent(botonLogin)
                 .addGap(44, 44, 44)
-                .addComponent(jButton2)
+                .addComponent(botonRegistro)
                 .addContainerGap(96, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLoginActionPerformed
         // TODO add your handling code here:
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
             }
         });
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_botonLoginActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void botonRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistroActionPerformed
         // TODO add your handling code here:
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Registro(negocio).setVisible(true);
             }
         });
-    }//GEN-LAST:event_jButton2ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_botonRegistroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,8 +143,8 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton botonLogin;
+    private javax.swing.JButton botonRegistro;
     private javax.swing.JLabel labelMenu;
     // End of variables declaration//GEN-END:variables
 }
