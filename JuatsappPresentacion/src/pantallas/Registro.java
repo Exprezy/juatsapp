@@ -154,6 +154,7 @@ public class Registro extends javax.swing.JFrame {
         botonVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Registrarse");
 
         labelRegistrarte.setText("Registrarte");
         labelRegistrarte.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -308,8 +309,11 @@ public class Registro extends javax.swing.JFrame {
 
     private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
         // TODO add your handling code here:
-        new Login().setVisible(true);
-        this.dispose();
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Login().setVisible(true);
+            }
+        });
     }//GEN-LAST:event_botonVolverActionPerformed
 
     private void textNumeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textNumeroKeyTyped

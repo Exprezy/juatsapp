@@ -51,9 +51,9 @@ public class Login extends javax.swing.JFrame {
         labelContrasena = new javax.swing.JLabel();
         passwordContrasena = new javax.swing.JPasswordField();
         botonIniciarSesion = new javax.swing.JButton();
-        botonRegistrarte = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Iniciar Sesión");
 
         labelLogin.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         labelLogin.setText("Login");
@@ -75,13 +75,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        botonRegistrarte.setText("Crear cuenta nueva");
-        botonRegistrarte.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonRegistrarteActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -99,11 +92,9 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(textUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(passwordContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(143, 143, 143)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(botonIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonRegistrarte, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(127, Short.MAX_VALUE))
+                        .addGap(129, 129, 129)
+                        .addComponent(botonIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,23 +109,14 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelContrasena)
                     .addComponent(passwordContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(botonIniciarSesion)
                 .addGap(36, 36, 36)
-                .addComponent(botonRegistrarte)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(botonIniciarSesion)
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void botonRegistrarteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarteActionPerformed
-        // TODO add your handling code here:
-        
-        new Registro(negocio).setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_botonRegistrarteActionPerformed
 
     private void textUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textUsuarioKeyTyped
         // TODO add your handling code here:
@@ -188,7 +170,6 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonIniciarSesion;
-    private javax.swing.JButton botonRegistrarte;
     private javax.swing.JLabel labelContrasena;
     private javax.swing.JLabel labelLogin;
     private javax.swing.JLabel labelUsuario;
