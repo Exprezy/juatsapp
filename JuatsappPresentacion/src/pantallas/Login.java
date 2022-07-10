@@ -13,8 +13,6 @@ import javax.swing.JOptionPane;
  */
 public class Login extends javax.swing.JFrame {
 
-    private INegocio negocio;
-
     /**
      * Creates new form Login
      */
