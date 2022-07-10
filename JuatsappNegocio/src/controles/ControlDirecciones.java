@@ -5,9 +5,7 @@
 package controles;
 
 import entidades.Direccion;
-import entidades.Usuario;
 import interfaces.IDatos;
-import java.util.List;
 
 /**
  *
