@@ -78,16 +78,16 @@ public class Registro extends javax.swing.JFrame {
     }
 
     public void guardarUsuario() {
-        
-        if(!verificarFormulario()){
+
+        if (!verificarFormulario()) {
             return;
         }
-        
-        if(negocio.verificarUsuarioTelefono(textTelefono.getText()) != null){
+
+        if (negocio.verificarUsuarioTelefono(textTelefono.getText()) != null) {
             mostrarError("Ya existe un usuario con el mismo telefono");
             return;
         }
-        
+
         String telefono = textTelefono.getText();
         String contrasena = String.valueOf(passwordContrasena.getPassword());
         String calle = textCalle.getText();

@@ -13,7 +13,7 @@ import interfaces.INegocio;
 public class Menu extends javax.swing.JFrame {
 
     private INegocio negocio;
-    
+
     /**
      * Creates new form Menu
      */
