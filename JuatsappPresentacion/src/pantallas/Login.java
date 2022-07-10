@@ -4,7 +4,6 @@
  */
 package pantallas;
 
-import interfaces.INegocio;
 import javax.swing.JOptionPane;
 
 /**
